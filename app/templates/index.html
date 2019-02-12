@@ -1,0 +1,50 @@
+<!-- index.html-->
+
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block body %}
+<div class="jumbotron mt-3">
+    <p>Olá! Esse site é apenas um pequeno teste realizado com Python + Flask + Bootstrap, caso você preencha o
+        formulário abaixo,
+        você recebrá um retorno de OK mas não significa que seus dados serão salvos em algum banco de dados :D</p>
+
+    <p class="font-weight-bold">Não sou designer e muito menos um cara visual :(</p>
+</div>
+
+<div class="card">
+
+    <div class="card-header">
+        <span>
+            <i class="far fa-file-alt"></i>
+            Formulário simples
+        </span>
+    </div>
+
+    <div class="card-body">
+        <form id="simple-form">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="name">Sobrenome</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Sobrenome">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-share-square"></i>
+                Enviar formulário
+            </button>
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}
